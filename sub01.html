@@ -1,0 +1,250 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>정보입력</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sub.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+       
+    </head>
+
+    <body>
+        <form name="" action="" method="">
+            <div id="wrap">
+               
+                <header id="header" class="clear">
+                    <h1><img src="img/chungbuk.png" alt="충북대학교"></h1>
+                    <div class="clear">
+                        <p class="clear"><span>담장자님 환영합니다.</span><span>로그아웃</span></p>
+                        <button type="button"><img src="img/log.gif" alt="로그아웃"></button>
+                    </div>
+
+                </header><!--header-->
+                <div id="contentWrap" class="clear">
+                    <button type="button" id="open1">
+                        <span>열기</span>
+                    </button>
+                    <aside id="leftWrap">
+                        <a href="#" id="close1">닫기</a>
+                        <p class="dashTit"><a href="admin.html">Dashboard</a></p>
+                        <h5>기술이전</h5>
+                        <ul>
+                            <li><a href="index.html">-&nbsp;&nbsp;기술이전 신청</a></li>
+                            <li><a href="#">-&nbsp;&nbsp;기술이전 결재</a></li>
+                            <li><a href="#">-&nbsp;&nbsp;기술이전 관리</a></li>
+                            <li><a href="search.html">-&nbsp;&nbsp;기술이전 조회</a></li>
+                            <li><a href="#">-&nbsp;&nbsp;기술이전 통계</a></li>
+                        </ul>
+                        <h5>관리</h5>
+                        <ul>
+                         <li><a href="sub01.html" class="on">-&nbsp;&nbsp;권한 관리</a></li>
+                         <li><a href="sub02.html">-&nbsp;&nbsp;사용자 관리</a></li>
+                         <li><a href="sub03.html">-&nbsp;&nbsp;메뉴 관리</a></li>
+                         <li><a href="sub08.html">-&nbsp;&nbsp;연구소 관리</a></li>
+                         <li><a href="sub07.html">-&nbsp;&nbsp;업체관리</a></li> 
+                         <li><a href="#">-&nbsp;&nbsp;일정관리</a></li>                   
+                         <li><a href="sub04.html">-&nbsp;&nbsp;코드 관리</a></li>
+                         <li><a href="#">-&nbsp;&nbsp;접속 통계</a></li>
+                     </ul>
+                    </aside>
+                    <div id="container">
+                        <div class="autho"> 
+                           권한명
+                           <div class="shbtn">
+                                <input type="text" maxlength="" value="" class="code" id="authname">
+                                <a href="#"></a>  
+                            </div>
+                            <div class="slt">
+                                <label>사용여부
+                                    <select name="yon" class="yon">
+                                        <option value="전체">전체</option>
+                                    </select> 
+                                </label>
+                            </div>
+                        </div>
+                        <!--.autho-->
+                                <div id="authuser" class="clear">
+                                    <div class="authuser01">
+                                        <table width="100%" cellspacing="0" cellpadding="4px">
+                                            <colgroup>
+                                                <col width="8%">
+                                                <col width="10%">
+                                                <col width="20%">
+                                                <col width="17%">
+                                                <col width="25%">
+                                                <col width="10%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="td_blue big border">NO</th>
+                                                    <td class="td_blue big">권한코드</td>
+                                                    <td class="td_blue big">권한명</td>
+                                                    <td class="td_blue big">권한설명</td>
+                                                    <td class="td_blue big">사용여부</td>
+                                                    <td class="td_blue big">
+                                                        <button type="button" class="download">추가</button>
+                                                     </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">1</td>
+                                                    <td class="td_blue active"><a href="#">Apply Role</a></td>
+                                                    <td class="td_blue">신청자 권한</td>  
+                                                    <td class="td_blue"></td>  
+                                                    <td class="td_blue">사용</td>  
+                                                    <td class="td_blue">
+                                                        <button type="button" class="del">삭제</button>
+                                                     </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">2</td>
+                                                    <td class="td_blue"><a href="#" tabindex="-1">TeamLeader_Role</a></td>
+                                                    <td class="td_blue">팀장 권한</td>  
+                                                    <td class="td_blue"></td>  
+                                                    <td class="td_blue">사용</td>  
+                                                    <td class="td_blue">
+                                                        <button type="button" class="del">삭제</button>
+                                                     </td>    
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">3</td>
+                                                    <td class="td_blue"><a href="#" tabindex="-1">Manager_Role</a></td>
+                                                    <td class="td_blue">담당자 권한</td>  
+                                                    <td class="td_blue"></td>  
+                                                    <td class="td_blue">사용</td>    
+                                                    <td class="td_blue">
+                                                        <button type="button" class="del">삭제</button>
+                                                     </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">4</td>
+                                                    <td class="td_blue"><a href="#" tabindex="-1">Viewer_Role</a></td>
+                                                    <td class="td_blue">조회자 권한</td>  
+                                                    <td class="td_blue"></td>  
+                                                    <td class="td_blue">미사용</td>    
+                                                    <td class="td_blue">
+                                                        <button type="button" class="del">삭제</button>
+                                                     </td>  
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">5</td>
+                                                    <td class="td_blue"><a href="#" tabindex="-1">Admin_Role</a></td>
+                                                    <td class="td_blue">관리자 권한</td>  
+                                                    <td class="td_blue"></td>  
+                                                    <td class="td_blue">사용</td>     
+                                                    <td class="td_blue">
+                                                        <button type="button" class="del">삭제</button>
+                                                     </td>    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="100%" cellspacing="0" cellpadding="4px" class="sV">
+                                            <colgroup>
+                                                <col width="15%">
+                                                <col width="35%">
+                                                <col width="15%">
+                                                <col width="35%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="td_dark_blue"><label for="menuname">권한코드</label></td>
+                                                    <td class="td_dark_blue"><input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="menuname"></td>
+                                                    <td class="td_dark_blue"><label for="turn">설명</label></td>
+                                                    <td class="td_dark_blue"> 
+                                                        <input type="text" maxlength="" value="연구자권한" style="width:96%" class="blue_input" id="menuname">
+                                                    </td>
+                                                </tr>
+                                               
+                                                <tr>
+                                                    <td class="td_dark_blue"><label for="menuname01">권한명</label></td>
+                                                    <td class="td_dark_blue"><input type="text" maxlength="" value="연구자권한" style="width:96%" class="blue_input" id="menuname01"></td>
+                                                    <td class="td_dark_blue">사용여부</td>
+                                                    <td class="td_dark_blue"><input type="checkbox" name="" id=""></td> 
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="bT">
+                                            <button type="button">저장</button>
+                                        </div>
+                                    </div>
+                                    <div class="authuser02">
+                                        <table width="100%" cellspacing="0" cellpadding="4px">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="30%">
+                                                <col width="50%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="td_blue big">NO</th>
+                                                    <th class="td_blue big"><input type="checkbox" id="chkAll" name="chk" value=""></th>
+                                                    <td class="td_blue big"><label for="chkAll">메뉴명</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">1</td>
+                                                    <td class="td_blue"><input type="checkbox" id="menuNM01" name="chk" value=""></td>
+                                                    <td class="td_blue">
+                                                        <label for="menuNM01">기술이전 신청</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">2</td>
+                                                    <td class="td_blue"><input type="checkbox" id="menuNM02" name="chk" value=""></td>
+                                                    <td class="td_blue">
+                                                        <label for="menuNM02">기술이전 결재</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">3</td>
+                                                    <td class="td_blue"><input type="checkbox" id="menuNM03" name="chk" value=""></td>
+                                                    <td class="td_blue">
+                                                        <label for="menuNM03">기술이전 관리</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">4</td>
+                                                    <td class="td_blue"><input type="checkbox" id="menuNM01" name="chk" value=""></td>
+                                                    <td class="td_blue">
+                                                        <label for="menuNM01">기술이전 조회</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">5</td>
+                                                    <td class="td_blue"><input type="checkbox" id="menuNM04" name="chk" value=""></td>
+                                                    <td class="td_blue">
+                                                        <label for="menuNM01">기술이전 통계</label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="bT">
+                                            <button type="button">저장</button>
+                                        </div>
+                                    </div>                                  
+                                    <!--authuser02-->
+                                </div>
+
+                            <!--codeCont-->
+                            <!--업체정보 입력-->
+                       
+                    </div>
+                    <!--#container-->
+                </div>
+                <!--contentWrap-->
+               
+
+
+
+            </div>
+            <!--#wrap-->
+        </form>
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+      
+    </body>
+
+    </html>

@@ -1,0 +1,180 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>정보입력</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sub.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+       
+    </head>
+
+    <body>
+        <form name="" action="" method="">
+            <div id="wrap">
+                <header id="header" class="clear">
+                    <h1><img src="img/chungbuk.png" alt="충북대학교"></h1>
+                    <div class="clear">
+                        <p class="clear"><span>담장자님 환영합니다.</span><span>로그아웃</span></p>
+                        <button type="button"><img src="img/log.gif" alt="로그아웃"></button>
+                    </div>
+                </header><!--header-->
+                <div id="contentWrap" class="clear">
+                    <button type="button" id="open1">
+                        <span>열기</span>
+                    </button>
+                    <aside id="leftWrap">
+                        <a href="#" id="close1">닫기</a>
+                        <p class="dashTit"><a href="admin.html">Dashboard</a></p>
+                        <h5>기술이전</h5>
+                        <ul>
+                            <li><a href="index.html">-&nbsp;&nbsp;기술이전 신청</a></li>
+                            <li><a href="#">-&nbsp;&nbsp;기술이전 결재</a></li>
+                            <li><a href="#">-&nbsp;&nbsp;기술이전 관리</a></li>
+                            <li><a href="search.html">-&nbsp;&nbsp;기술이전 조회</a></li>
+                            <li><a href="#">-&nbsp;&nbsp;기술이전 통계</a></li>
+                        </ul>
+                        <h5>관리</h5>
+                        <ul>
+                         <li><a href="sub01.html">-&nbsp;&nbsp;권한 관리</a></li>
+                         <li><a href="sub02.html">-&nbsp;&nbsp;사용자 관리</a></li>
+                         <li><a href="sub03.html">-&nbsp;&nbsp;메뉴 관리</a></li>
+                         <li><a href="sub08.html">-&nbsp;&nbsp;연구소 관리</a></li>
+                         <li><a href="sub07.html" class="on">-&nbsp;&nbsp;업체관리</a></li> 
+                         <li><a href="#">-&nbsp;&nbsp;일정관리</a></li>                   
+                         <li><a href="sub04.html">-&nbsp;&nbsp;코드 관리</a></li>
+                         <li><a href="#">-&nbsp;&nbsp;접속 통계</a></li>
+                     </ul>
+                    </aside>
+                    <div id="container">
+                        <div class="autho">
+                            <select name="yon" class="yon">
+                                <option value="업체명">업체명</option>
+                                <option value="사업자등록번호">사업자등록번호</option>
+                            </select> 
+                            <div class="shbtn01"> 
+                            <input type="text" maxlength="" value="" class="code" id="username">
+                            <a href="#"></a>    
+                            </div>                       
+                        </div>
+                        <!--.autho-->
+                            <div class="userCont">
+                                    <fieldset>
+                                        <legend>업체정보</legend>
+                                        <table width="100%" cellspacing="0" cellpadding="4px">
+                                            <colgroup>
+                                                <col width="13%">
+                                                <col width="15%">
+                                                <col width="14%">
+                                                <col width="15%">
+                                                <col width="12%">
+                                                <col width="14%">
+                                                <col width="17%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="td_blue big">업체명</th>
+                                                    <td class="td_blue big">사업자등록번호</td>
+                                                    <td class="td_blue big">기관유형</td>
+                                                    <td class="td_blue big">업태</td>
+                                                    <td class="td_blue big">담당자명</td>
+                                                    <td class="td_blue big">이메일</td>
+                                                    <td class="td_blue big">사업자등록증</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue"><input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="name04"></td>
+                                                    <td class="td_blue"><p>123-45-6789</p></td>
+                                                    <td class="td_blue">
+                                                        <select name="category" id="category" class="select_input03">
+                                                            <option value="주식회사">주식회사</option>
+                                                            <option value="공공기관">공공기관</option>
+                                                        </select>
+                                                    </td>  
+                                                    <td class="td_blue">
+                                                        <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="bus4" placeholder="자동 또는 수기기입">
+                                                    </td>  
+                                                    <td class="td_blue">
+                                                        <input type="tel" maxlength="" value="" style="width:96%" class="blue_input" id="manager" placeholder="김담당">
+                                                    </td>
+                                                    </td>
+                                                    <td class="td_blue">
+                                                        <input type="email" maxlength="" value="" style="width:96%" class="blue_input" id="mail03" placeholder="tech@mail.com">
+                                                     </td>  
+                                                    <td class="td_blue">
+                                                        <input type="file" maxlength="" value="" style="width:82%" id="reg">
+                                                     </td> 
+                                                </tr>
+                                                <tr>
+                                                    <th class="td_blue big">대표자명</th>
+                                                    <td class="td_blue big">국가</td>
+                                                    <td class="td_blue big">지역구분</td>
+                                                    <td class="td_blue big">업종</td>
+                                                    <td class="td_blue big">담당자연락처</td>
+                                                    <td class="td_blue big">휴대전화번호</td>
+                                                    <td class="td_blue big">비고란</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_blue">
+                                                        <p>김대표</p>
+                                                    </td>
+                                                    <td class="td_blue">
+                                                        <select name="country" class="country select_input01">
+                                                            <option value="국내">국내</option>
+                                                            <option value="국외">국외</option>
+                                                        </select>
+                                                        <select name="국외" class="nation select_input02">
+                                                            <optgroup label="국외">
+                                                                <option value="China">중국</option>
+                                                                <option value="Japan">일본</option>
+                                                            </optgroup>
+                                                            <optgroup label="국내">
+                                                                <option value="Republic of Korea">대한민국</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </td>
+                                                    <td class="td_blue">
+                                                        <select name="area" id="area" class="select_input03">
+                                                            <option value="충북">충북</option>
+                                                            <option value="부산">부산</option>
+                                                        </select>
+                                                    </td>  
+                                                    <td class="td_blue">
+                                                        <select name="typ" id="sectors" class="select_input03">
+                                                            <option value="">업종을 선택해주세요.</option>
+                                                            <option value=""></option>
+                                                        </select>
+                                                    </td>  
+                                                    <td class="td_blue">
+                                                        <input type="tel" maxlength="" value="" style="width:96%" class="blue_input" id="phone03" placeholder="043-123-5678">
+                                                    </td>
+                                                    </td>
+                                                    <td class="td_blue">
+                                                        <input type="tel" maxlength="" value="" style="width:96%" class="blue_input" id="phone04" placeholder="010-1234-5678">
+                                                     </td>  
+                                                    <td class="td_blue">
+                                                        <textarea name="" id="" cols="100%" rows="2" class="blue_input" style="width:96%"></textarea>
+                                                    </td>
+                                                     </td> 
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </fieldset>
+                            </div>
+                            <!--userCont-->
+                    </div>
+                    <!--#container-->
+                </div>
+                <!--contentWrap-->
+            </div>
+            <!--#wrap-->
+        </form>
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+      
+    </body>
+
+    </html>
